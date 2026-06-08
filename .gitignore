@@ -1,0 +1,5 @@
+node_modules/
+.DS_Store
+
+# Ignore generated leetcode folders (optional, remove this if you want to push your answers along with the CLI code)
+[0-9][0-9][0-9][0-9]/
