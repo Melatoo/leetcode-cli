@@ -21,6 +21,7 @@ It connects directly to the **LeetCode GraphQL API**, fetches the problem data, 
 - 📖 **Markdown Descriptions**: Automatically fetches the problem description and converts it to a clean `.md` file using `turndown`.
 - 💻 **Smart Code Extraction**: Downloads the exact JavaScript starting snippet for the problem.
 - 🧠 **Auto-Export Detection**: Intelligently ignores commented helper structures (like `ListNode`) and finds the correct function to `module.exports` for easy local testing.
+- 🧪 **Built-in Local Testing**: Run `leetcode-test` to automatically fetch examples from LeetCode and test your solution locally against them.
 - 📂 **Organized Structure**: Pads folder names (e.g., `0001`, `0002`) so your repository stays neatly sorted!
 
 ## ⚙️ Installation
@@ -75,6 +76,21 @@ var twoSum = function(nums, target) {
 
 module.exports = twoSum;
 ```
+
+### 🧪 Testing your Solution
+
+Inside the generated folder, you can automatically test your `mySolution.js` using the official LeetCode examples:
+
+```bash
+cd 0001
+leetcode-test
+```
+
+This command will:
+1. Identify the problem ID from the folder name.
+2. Fetch the test cases directly from LeetCode's GraphQL API.
+3. Parse the expected outputs from the problem description.
+4. Run your `mySolution.js` against the test cases and validate the results.
 
 ## 🛠️ Tech Stack
 
