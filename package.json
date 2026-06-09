@@ -4,7 +4,8 @@
   "description": "CLI para gerar estrutura de pastas do LeetCode",
   "main": "index.js",
   "bin": {
-    "leetcode-gen": "./index.js"
+    "leetcode-gen": "./index.js",
+    "leetcode-test": "./test.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
